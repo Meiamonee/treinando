@@ -1,17 +1,22 @@
-import Logo from '../../componentes/Logo'
-import Lista from '../../componentes/OpcaoLista';
-import Icones from '../../componentes/OpcaoLogo';
-import './style.css'
+import Logo from '../Logo'
+import Lista from '../OpcaoLista'
+import IconesHeader from '../IconesHeader'
+import styled from 'styled-components'
 
-function Header () {
-    return (
-        <header className="App-header">
-        <Logo />
-        <Lista />
-        <Icones/>
-      </header>
-    )
+const HeaderContainer = styled.header`
+        background-color: #FFF;
+        display: flex;
+        justify-content: center;
+`
 
+function Header() {
+        return (
+                <HeaderContainer>
+                        <Logo/>
+                        <Lista/>
+                        <IconesHeader/>
+                </HeaderContainer>
+            )
 }
 
 export default Header
